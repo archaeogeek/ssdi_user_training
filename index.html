@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SSDI Metadata Portal User Training</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>SSDI Metadata Portal</h1>
+					<h2 style="text-transform:capitalize">User Training</h2>
+				</section>
+				<section>
+					<h1>Who am I?</h1>
+					<h2 style="text-transform:capitalize">Jo Cook, Metadata Lead Consultant, Astun Technology</h2>
+					<img class="center" src="./images/logo.png" alt="wizard" width="400">
+				</section>
+				<section>
+					<h1>Astun's Role</h1>
+					<p>Responsible for setting up the new SSDI catalogue, importing existing records, providing training, customising the interface, and liaising with core developers.</p>
+					<aside class="notes">Astun will be supporting the platform for at least the next couple of years</aside>
+				</section>
+				<section>
+					<h1>Training Outline</h1>
+					<ul>
+						<li>Overview of interface and documentation</li>
+						<li>Update on Metadata Standards in the new catalogue</li>
+						<li>Guided walk-through for creating a new record from scratch and validating it</li>
+						<li>Demonstration of publication process</li>
+						<li>Questions</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Housekeeping/Logistics</h1>
+					<ul>
+						<li>WIFI Credentials:</li>
+						<li>Metadata Portal URL: <a target="_blank" href="https://www.spatialdata.gov.scot">https://www.spatialdata.gov.scot</a></li>
+						<li>Username and Password as provided</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Overview of new interface</h1>
+					<ul>
+						<li>Latest stable version of GeoNetwork Open Source</li>
+						<li>Responsive (works on mobile phones)</li>
+						<li>Easier to edit metadata</li>
+						<li>Online (regularly updated) user guidance</li>
+					</ul>
+					<aside class="notes">Update to core software means it's actively updated, bugs are fixed, many improvements to core code. Online documentation means you can submit edits on GitHub! Process of submitting a documentation change seems tedious but it's a button-pressing exercise and the change will be made live as soon as it's reviewed</aside>
+				</section>
+				<section>
+					<h1>Metadata Standards</h1>
+					<ul>
+						<li>Gemini 2.2 is now a self-contained schema in the portal</li>
+						<li>Metadata Standard Name and Version are optional in Gemini 2.2 but are now consistently named and added to all records</li>
+						<li>Records can be searched by schema in the portal interface</li>
+						<li><b>Records imported and harvested must be post-processed to ensure they are correct for Gemini 2.2</b></li>
+						<li><b>Gemini 2.3 will be a separate standard within the portal (though mostly identical)</b></li>
+					</ul>
+					<aside class="notes">Gemini 2.2 is a separate standard or plugin in Geonetwork, giving the option to create records separately in ISO19139. It will also allow Gemini 2.3 to be added as a new standard, entirely self-contained. A method of upgrading from one to the other will be provided when needed!</aside>
+				</section>
+				<section>
+					<h1>Creating and Editing records</h1>
+					<ul>
+						<li>Follow the detailed guidance: <a target="_blank" href="http://scottish-sdi-metadata-portal.readthedocs.io/en/latest/ssdi_guidance.html#creating-dataset-and-service-metadata-from-a-template">http://scottish-sdi-metadata-portal.readthedocs.io/en/latest/ssdi_guidance.html#creating-dataset-and-service-metadata-from-a-template</a></li>
+						<li>Find section on "Adding Discover Metadata to the SSDI"</li>
+						<li>Save and Validate as you go!</li>
+						<li class="fragment">But not just yet...</li>
+					</ul>
+					<aside class="notes">A few things to go through before we let you loose- how to validate records, and how to use the new associated resources wizard</aside>
+				</section>
+				<section>
+					<h1>Validation overview</h1>
+					<p>Gemini metadata is validated against 4 rulesets or schematrons and also checks for basic XML validity</p>
+					<img class="center" src="./images/validation.png" alt="wizard" width="600">
+					<aside class="notes">Click the red thumbs down button to expand errors. Note some errors will occur in more than one place. Note that scary xpath matches with tabs in advanced view, if you can't see the problem in default view. Remember to save metadata before re-validating!</aside>
+				</section>
+				<section>
+					<h1>Associated Resources Wizard</h1>
+					<p>New feature for adding <b>Coupled Resources</b> (linking datasets to services) and <b>Online Resource Locators</b> (URL giving access to, or information about the data)</p>
+					<img class="center" src="./images/associated_resources_wizard.png" alt="wizard" width="600">
+					<aside class="notes">Note this currently doesn't allow editing- for full functionality such as adding the function element to an ORI go to the online resource section of the standard editing interface</aside>
+				</section>
+				<section>
+					<h1>Viewing records on the map</h1>
+					<p>If an online resource locator is added that points to a valid WMS layer, then this can be added directly to the map using <b>Add to Map</b></p>
+					<p>For services, ignore the <b>Add to Map</b> button and add the GetCapabilities URL directly to the Map <b>Add Layer</b> interface, then choose the appropriate layer</p>
+					<aside class="notes">Zoom to extent, then zoom in to hit correct scale.</aside>
+				</section>
+				<section>
+					<h1>Your turn!</h1>
+					<p>With the detailed guidance <a target="_blank" href="http://scottish-sdi-metadata-portal.readthedocs.io/en/latest/ssdi_guidance.html#creating-dataset-and-service-metadata-from-a-template">http://scottish-sdi-metadata-portal.readthedocs.io/en/latest/ssdi_guidance.html#creating-dataset-and-service-metadata-from-a-template</a> open in a browser tab, find the section on <b>Adding Discovery Metadata to the SSDI</b><p>
+					<p class="fragment">Go to <b>Contribute/Add New Record</b> and choose <b>Dataset/Template for Vector Data in UK Gemini 2.2 rev2</b></p>
+				</section>
+				<section data-background-image="./images/create_new_vector.png" data-background-size="1000px" class="full">
+				</section>
+				<section>
+					<p>For the <b>Online Resource Locator</b> use the example URL given in the Online Resource section of the guidance</p>
+					<p>For the <b>Coupled Resource</b> choose the <b>SSDI Training Test View Service (WMS)</p>
+				</section>
+
+
+
+					
+				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				showNotes: false,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
