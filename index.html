@@ -28,32 +28,34 @@
 				<section>
 					<h1>SSDI Metadata Portal</h1>
 					<h2 style="text-transform:capitalize">User Training</h2>
+					<img class="center" src="./images/SSDI_Logo.png" alt="SSDI Logo" width="400">
 				</section>
 				<section>
 					<h1>Who am I?</h1>
 					<h2 style="text-transform:capitalize">Jo Cook, Metadata Lead Consultant, Astun Technology</h2>
-					<img class="center" src="./images/logo.png" alt="wizard" width="400">
+					<img class="center" src="./images/logo.png" alt="Astun Logo" width="400">
 				</section>
 				<section>
 					<h1>Astun's Role</h1>
-					<p>Responsible for setting up the new SSDI catalogue, importing existing records, providing training, customising the interface, and liaising with core developers.</p>
+					<p>We're responsible for setting up the new SSDI catalogue, importing existing records, providing training, customising the interface, and liaising with core developers to provide bug fixes and enhancements.</p>
 					<aside class="notes">Astun will be supporting the platform for at least the next couple of years</aside>
 				</section>
 				<section>
-					<h1>Training Outline</h1>
+					<h1>Today's Training Aims</h1>
 					<ul>
-						<li>Overview of interface and documentation</li>
-						<li>Update on Metadata Standards in the new catalogue</li>
-						<li>Guided walk-through for creating a new record from scratch and validating it</li>
-						<li>Demonstration of publication process</li>
-						<li>Questions</li>
+						<li class="fragment">To provide an overview of the new interface and documentation</li>
+						<li class="fragment">To give an update on Metadata Standards and how they are handled in the new catalogue</li>
+						<li class="fragment">To give a guided walk-through for creating a new record from scratch and validating it</li>
+						<li class="fragment">To give a demonstration of the publication process</li>
+						<li class="fragment">To answer any questions you might have about the new catalogue</li>
 					</ul>
 				</section>
 				<section>
-					<h1>Housekeeping/Logistics</h1>
+					<h1>Firstly, some housekeeping/logistics</h1>
 					<ul>
-						<li>WIFI Credentials:</li>
 						<li>Metadata Portal URL: <a target="_blank" href="https://www.spatialdata.gov.scot">https://www.spatialdata.gov.scot</a></li>
+						<li>Documentation URL: <a target="_blank" href="http://scottish-sdi-metadata-portal.readthedocs.io/en/latest/">http://scottish-sdi-metadata-portal.readthedocs.io/en/latest/</a></li>
+						<li>WIFI credentials are available</li>
 						<li>Username and Password as provided</li>
 					</ul>
 				</section>
@@ -62,21 +64,40 @@
 					<ul>
 						<li>Latest stable version of GeoNetwork Open Source</li>
 						<li>Responsive (works on mobile phones)</li>
-						<li>Easier to edit metadata</li>
+						<li>More user-friendly interface</li>
 						<li>Online (regularly updated) user guidance</li>
 					</ul>
-					<aside class="notes">Update to core software means it's actively updated, bugs are fixed, many improvements to core code. Online documentation means you can submit edits on GitHub! Process of submitting a documentation change seems tedious but it's a button-pressing exercise and the change will be made live as soon as it's reviewed</aside>
+					<img class="center" src="./images/geonetwork3-logo.png" alt="Geonetwork Logo" width="400">
+					<aside class="notes">Update to core software means it's actively updated, bugs are fixed, many improvements to core code. Online documentation is regularly updated. Go through interface (log in as non-admin) and documentation- can be printed as pdf or even ebook</aside>
+				</section>				
+				<section>
+					<h1>Now responsive!</h1>
+					<img style="padding:10px" width="250" src="./images/responsive_display.png" alt="Responsive Display">
+					<img style="padding:10px" width="250" src="./images/responsive_edit.png" alt="Responsive Editing">
+					<aside class="notes">Should you ever want to edit/view metadata on the move...</aside>
 				</section>
 				<section>
 					<h1>Metadata Standards</h1>
-					<ul>
-						<li>Gemini 2.2 is now a self-contained schema in the portal</li>
-						<li>Metadata Standard Name and Version are optional in Gemini 2.2 but are now consistently named and added to all records</li>
-						<li>Records can be searched by schema in the portal interface</li>
-						<li><b>Records imported and harvested must be post-processed to ensure they are correct for Gemini 2.2</b></li>
-						<li><b>Gemini 2.3 will be a separate standard within the portal (though mostly identical)</b></li>
+					<img class="center" src="./images/logo_inspire.png" alt="INSPIRE">
+				</section>
+				<section>
+						<p>The new catalogue has the capability to support multiple metadata standards. Gemini 2.2 is now a self-contained standard, separate from ISO19139, and Gemini 2.3 will be a separate standard again within the portal</p>
 					</ul>
-					<aside class="notes">Gemini 2.2 is a separate standard or plugin in Geonetwork, giving the option to create records separately in ISO19139. It will also allow Gemini 2.3 to be added as a new standard, entirely self-contained. A method of upgrading from one to the other will be provided when needed!</aside>
+					<img class="center" width="500" src="./images/geonetwork_standards.png" alt="Geonetwork standards">
+				</section>
+				<section>
+					<h1>Standards Enforcement</h1>
+						<p>Metadata Standard Name and Version were dropped from Gemini 2.2 (*) but here are added to all records to help with identification</p>
+						<p class="fragment"><small>* They are present in ISO19115/19139 so this approach is allowed in Gemini</small></p>
+						<img class="center"  class="fragment" src="./images/standard_name_version.png" alt="Standard name and version">
+					<aside class="notes">Helps Geonetwork identify/separate schemas, also end-user. Namespace compliance helps with validation</aside>
+				</section>
+				<section>
+					<h1>Standards Enforcement ctd</h1>
+						<p class="fragment">Consistency of namespaces and root elements is enforced throughout the catalogue</p>
+						<p class="fragment">Imported or harvested records must be post-processed to ensure compliance</p>
+						<p class="fragment">See Annex 3 in the User Guidance for further information</p>
+					<aside class="notes">Namespace compliance helps with validation</aside>
 				</section>
 				<section>
 					<h1>Creating and Editing records</h1>
@@ -109,19 +130,51 @@
 				<section>
 					<h1>Your turn!</h1>
 					<p>With the detailed guidance <a target="_blank" href="http://scottish-sdi-metadata-portal.readthedocs.io/en/latest/ssdi_guidance.html#creating-dataset-and-service-metadata-from-a-template">http://scottish-sdi-metadata-portal.readthedocs.io/en/latest/ssdi_guidance.html#creating-dataset-and-service-metadata-from-a-template</a> open in a browser tab, find the section on <b>Adding Discovery Metadata to the SSDI</b><p>
-					<p class="fragment">Go to <b>Contribute/Add New Record</b> and choose <b>Dataset/Template for Vector Data in UK Gemini 2.2 rev2</b></p>
 				</section>
 				<section data-background-image="./images/create_new_vector.png" data-background-size="1000px" class="full">
+				<p class="fragment">Go to <b>Contribute/Add New Record</b> and choose <b>Dataset/Template for Vector Data in UK Gemini 2.2 rev2</b></p>
 				</section>
 				<section>
 					<p>For the <b>Online Resource Locator</b> use the example URL given in the Online Resource section of the guidance</p>
-					<p>For the <b>Coupled Resource</b> choose the <b>SSDI Training Test View Service (WMS)</p>
+					<p>For the <b>Coupled Resource</b> choose the <b>SSDI Training Test View Service (WMS)</b></p>
+				</section>
+				<section>
+				<h1>Publication</h1>
+				<ul>
+					<li>New setting: "Prevent publication of invalid records" (currently not enabled)</li>
+					<li>Publication determined by privileges for "All" Users</li>
+					<li>Public records are accessible in the catalogue when not logged in</li>
+					<li>Publication status is visible at record level, or in the "Contribute" page</li>
+				</ul>
+				<aside class="notes">Check logged in via not logged in, show status in contribute menu</aside>
+				</section>
+				<section>
+				<h1>Publication Ctd</h1>
+				<img class="center" src="./images/not_published.png" alt="not published" width="600">
+				<img class="center" src="./images/published.png" alt="published" width="600">
 				</section>
 
-
-
-					
-				
+				<section>
+				<h1>Publication and CSW Endpoints</h1>
+				<ul>
+					<li>Only public records are visible to the CSW endpoint</li>
+					<li>Data.gov.uk uses the CSW endpoint to harvest public records</li>
+					<li>Use a GetRecordByID request to see what is returned</li>
+				</ul>
+				<aside class="notes">QGIS MetaSearch also uses CSW endpoint</aside>
+				</section>
+				<section>
+				<h1>Important CSW Requests</h1>
+				<ul>
+				<li>GetCapabilities: <a target="_blank" href="https://www.spatialdata.gov.scot/geonetwork/srv/eng/csw?version=2.0.2&service=CSW&request=GetCapabilities">https://www.spatialdata.gov.scot/geonetwork/srv/eng/csw?version=2.0.2&service=CSW&request=GetCapabilities</a></li>
+				<li>GetRecords: <a target="_blank" href="https://www.spatialdata.gov.scot/geonetwork/srv/eng/csw?version=2.0.2&service=CSW&request=GetRecords&typeNames=csw:Record">https://www.spatialdata.gov.scot/geonetwork/srv/eng/csw?version=2.0.2&service=CSW&request=GetRecords&typeNames=csw:Record</a></li>
+				<li>GetRecordById (Output Schema Dublin Core): <a target="_blank" href="https://www.spatialdata.gov.scot/geonetwork/srv/eng/csw?version=2.0.2&service=CSW&request=GetRecordById&id=76755de1-128f-42f8-bbaa-932a8ee4cd69">https://www.spatialdata.gov.scot/geonetwork/srv/eng/csw?version=2.0.2&service=CSW&request=GetRecordById&id=76755de1-128f-42f8-bbaa-932a8ee4cd69</a></li>
+				<li>GetRecordById (Output Schema gmd): <a target="_blank" href="https://www.spatialdata.gov.scot/geonetwork/srv/eng/csw?version=2.0.2&service=CSW&request=GetRecordById&id=76755de1-128f-42f8-bbaa-932a8ee4cd69&outputSchema=http://www.isotc211.org/2005/gmd">https://www.spatialdata.gov.scot/geonetwork/srv/eng/csw?version=2.0.2&service=CSW&request=GetRecordById&id=76755de1-128f-42f8-bbaa-932a8ee4cd69&outputSchema=http://www.isotc211.org/2005/gmd</a></li>
+				</ul>
+				</section>
+				<section>
+				<h1>Questions?</h1>
+				</section>				
 			</div>
 		</div>
 
